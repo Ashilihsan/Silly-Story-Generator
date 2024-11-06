@@ -21,11 +21,13 @@ function result() {
   const xItem = randomValueFromArray(insertx);
   const yItem = randomValueFromArray(inserty);
   const zItem = randomValueFromArray(insertz);
+  
 
   // Replace placeholders in newStory with values from xItem, yItem, and zItem
   newStory = newStory.replace(':insertx:', xItem);
   newStory = newStory.replace(':inserty:', yItem);
   newStory = newStory.replace(':insertz:', zItem);
+  newStory = newStory.replace(':insertx:', xItem);
 
   // Replace 'Bob' with custom name if one is provided
   if (customName.value !== '') {
